@@ -1,4 +1,4 @@
-import Todo from "./pages/todo";
+import Todo from "./pages/Todo";
 
 function App() {
   return (
