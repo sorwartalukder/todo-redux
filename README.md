@@ -1,3 +1,3 @@
 # React + TypeScript + Vite
 
- <img src="./assets/todo-redux.png" alt="" />
+ <img src="./public/assets/todo-redux.png" alt="" />
