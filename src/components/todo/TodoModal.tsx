@@ -32,8 +32,6 @@ const TodoModal = () => {
   const [description, setDescription] = useState("");
   const [priority, setPriority] = useState("");
 
-  console.log(result);
-
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();
     // const randomString = Math.random().toString(36).substring(2, 7); //local
@@ -44,7 +42,6 @@ const TodoModal = () => {
       isCompleted: false,
       priority,
     };
-    console.log("inside modal", taskDetails);
     addTodo(taskDetails);
     //local
     // dispatch(addTodo(taskDetails));
