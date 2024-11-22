@@ -27,10 +27,12 @@ const TodoModal = () => {
   // const dispatch = useAppDispatch();
 
   //server
-  const [addTodo, result] = useAddTodosMutation();
+  const [addTodo /* result */] = useAddTodosMutation();
   const [task, setTask] = useState("");
   const [description, setDescription] = useState("");
   const [priority, setPriority] = useState("");
+
+  // console.log(result);
 
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();

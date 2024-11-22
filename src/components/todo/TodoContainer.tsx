@@ -14,7 +14,6 @@ const TodoContainer = () => {
   if (isLoading) {
     return <h2>Loading....</h2>;
   }
-  console.log(priority);
   return (
     <div>
       <div className="flex justify-between items-center mb-5">

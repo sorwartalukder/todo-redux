@@ -14,7 +14,6 @@ export const baseApi = createApi({
         if (priority) {
           params.append("priority", priority);
         }
-        console.log(params);
 
         return {
           url: `/tasks`,
@@ -34,7 +33,18 @@ export const baseApi = createApi({
       },
       invalidatesTags: ["todo"],
     }),
+    updateTodo: builder.mutation({
+      query: (options) => {
+        return {
+          url: `/task/${options.id}`,
+          method: "PUT",
+          body: options.data,
+        };
+      },
+      invalidatesTags: ["todo"],
+    }),
   }),
 });
 
-export const { useGetTodosQuery, useAddTodosMutation } = baseApi;
+export const { useGetTodosQuery, useAddTodosMutation, useUpdateTodoMutation } =
+  baseApi;
